@@ -17,6 +17,7 @@ body {
   }
   
 .dropdown-menu {
+    min-width: max-content !important;
     border: none;
     width: 100%;
     font-weight: 200;
@@ -36,9 +37,6 @@ body {
     position: absolute;
     object-fit: contain;
     min-height: 600px;
-}
-.open {
-    display: block;
 }
 .dropdown>.dropdown-toggle:active {
     pointer-events: none;   
@@ -67,7 +65,62 @@ body {
     text-transform: uppercase;
     font-weight: 800;
 }
-/* .navbar-expand-lg {
+.open {
+    display: block;
+}
+
+.openNav {
+    display: block;
     max-height: 400px;
     overflow-y: auto;
-  } */
+  }
+  
+.footer{
+    background: black;
+    color: #DDE1DB;
+    height: 300px;
+}
+.footer ul li a{
+    color: cyan;
+}
+
+@media (max-width: 1100px) { 
+    .footer-section-quickContact {
+        font-size: .8rem;
+    }
+    .footer-section-about{
+        font-size: .8rem;
+    }
+ }
+@media (max-width: 768.98px) { 
+    #homeText{
+        font-size: 1.5rem;
+        padding-top: 60px;
+    }
+    .footer{
+        height: 650px;
+
+    }
+    .footer-section-about{
+        font-size: 1rem;
+    }
+    .footer-section-quickContact  {
+        margin-top: 10px;
+    }  
+    .footer-section-quickContact input {
+        margin-left: 10px;
+    }    
+    .footer-section-quickContact textarea {
+        margin-left: 10px;
+    }
+    .footer-section-Links{
+        margin-top: 50px;
+
+    }
+ 
+}
+@media screen and (max-width:767px){
+    .dropdown-menu{
+    min-width: 10rem !important;
+    }
+    }
